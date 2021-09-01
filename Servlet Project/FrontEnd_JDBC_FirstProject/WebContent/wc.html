@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>My App</title>
+<style type="text/css">
+	body{
+		background-color: pink;
+		
+	}
+	
+	table{
+		border: 2px solid gray;
+		border-radius:30px;
+		padding: 20px;
+	}
+	
+	
+	
+	tbody>tr>td{
+		font-size: 25px;
+		
+	}
+	
+
+	input{
+		height:30px;
+		font-size: 20px;
+	}
+	#submitButton{
+		background-color: lightblue;
+		width: 150px;
+		height:40px;
+		font-size: 30px;
+	}
+	h2{
+		
+		color:darkcyan;
+			
+	}
+</style>
+</head>
+<body>
+	<marquee><h1>Welcome To Engineering College</h1></marquee>
+	<form action="find">
+		<table align="center">
+			<thead>
+				<tr>
+					<td><h2>Check Student Details Here</h2></td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Enter Department Name:</td>
+					<td><input type="text" name="depts"></td>
+				</tr>
+				
+				<tr>
+					<td>Submit Here To Get List:</td>
+					<td><input id="submitButton" type="submit" value="Click Me"></td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+</body>
+</html>

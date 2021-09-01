@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+	dl{
+		display:inline-block;
+		border:2px solid black;
+		margin: auto;
+		background-color: darkcyan;
+		padding: 30px;
+		color:white;
+	}
+</style>
+</head>
+<body>
+	<form action="simpleinterest" method="get">
+		<dl>
+  			<dt>Account Number:</dt>
+  			<dd><input type="number" name="acoount_no" placeholder="Enter Account Number" required="required"></dd>
+  			<dt>Amount:</dt>
+  			<dd><input type="number" name="amt" placeholder="Enter Amount" required="required"></dd>
+  			
+  			<dt>City:</dt>
+  			<dd>
+  				<select name="city">
+					<option>Mumbai</option>
+					<option>Pune</option>
+					<option>Latur</option>
+				</select>
+			</dd>
+  			<dt>Click Below:</dt>
+  			<dd><input type="submit" value="Calculate"></dd>
+		</dl>
+		
+		
+		
+	</form>
+</body>
+</html>

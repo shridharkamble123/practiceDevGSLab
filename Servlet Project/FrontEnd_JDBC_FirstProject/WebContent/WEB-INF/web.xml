@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>FrontEnd_JDBC_FirstProject</display-name>
+  <welcome-file-list>
+    <welcome-file>wc.html</welcome-file>   
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>department</servlet-name>
+  	<servlet-class>org.jspider.frontend_jdbc_firstproject.conection.ServletConfigEx</servlet-class>
+  	
+  	
+  	<init-param>
+  		<param-name>driver</param-name>
+  		<param-value>com.mysql.jdbc.Driver</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>url</param-name>
+  		<param-value>jdbc:mysql://localhost:3306</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>user</param-name>
+  		<param-value>root</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>password</param-name>
+  		<param-value>root</param-value>
+  	</init-param>
+  	
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>department</servlet-name>
+  	<url-pattern>/find</url-pattern>
+  </servlet-mapping>
+</web-app>
